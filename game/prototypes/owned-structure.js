@@ -4,7 +4,7 @@ import {Structure} from './structure';
  */
 export class OwnedStructure extends Structure{
     /**
-    * @type {boolean}
+    * @type {bool}
     * Returns true for your structure, false for a hostile structure, undefined for a neutral structure.
     */
     my;

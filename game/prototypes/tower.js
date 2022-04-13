@@ -12,7 +12,7 @@ import {OwnedStructure} from './owned-structure';
  */
 export class StructureTower extends OwnedStructure{
     /**
-    * @type {number}
+    * @type {float}
     * The remaining amount of ticks while this tower cannot be used.
     */
     cooldown;

@@ -5,13 +5,13 @@ import {Visual} from './visual';
  */
 export class Visual {
     /**
-    * @type {number}
+    * @type {float}
     * The layer of visuals in the object.
     */
     layer;
 
     /**
-    * @type {boolean}
+    * @type {bool}
     * Whether visuals in this object are persistent.
     */
     persistent;

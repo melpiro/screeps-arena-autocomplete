@@ -4,13 +4,13 @@ import {GameObject} from './game-object';
  */
 export class Resource extends GameObject{
     /**
-    * @type {number}
+    * @type {float}
     * The amount of dropped resource.
     */
     amount;
 
     /**
-    * @type {string}
+    * @type {str}
     * One of the RESOURCE_* constants.
     */
     resourceType;

@@ -5,19 +5,19 @@ import {GameObject} from './game-object';
  */
 export class ConstructionSite extends GameObject{
     /**
-    * @type {boolean}
+    * @type {bool}
     * Whether it is your construction site.
     */
     my;
 
     /**
-    * @type {number}
+    * @type {float}
     * The current construction progress.
     */
     progress;
 
     /**
-    * @type {number}
+    * @type {float}
     * The total construction progress needed for the structure to be built.
     */
     progressTotal;
@@ -40,31 +40,31 @@ export class ConstructionSite extends GameObject{
  */
 export class GameObject {
     /**
-    * @type {boolean}
+    * @type {bool}
     * Returns true if this object is live in the game at the moment. Check this property to verify cached or newly created object instances.
     */
     exists;
 
     /**
-    * @type {string}
+    * @type {str}
     * The unique ID of this object that you can use in game/utilsgetObjectById.
     */
     id;
 
     /**
-    * @type {number}
+    * @type {float}
     * If defined, then this object will disappear after this number of ticks.
     */
     ticksToDecay;
 
     /**
-    * @type {number}
+    * @type {float}
     * The X coordinate in the room.
     */
     x;
 
     /**
-    * @type {number}
+    * @type {float}
     * The Y coordinate in the room.
     */
     y;

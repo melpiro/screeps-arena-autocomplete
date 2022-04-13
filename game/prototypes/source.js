@@ -4,13 +4,13 @@ import {GameObject} from './game-object';
  */
 export class Source extends GameObject{
     /**
-    * @type {number}
+    * @type {float}
     * Current amount of energy in the source.
     */
     energy;
 
     /**
-    * @type {number}
+    * @type {float}
     * The maximum amount of energy in the source.
     */
     energyCapacity;

@@ -11,37 +11,37 @@ export {visual};
  */
 export class arenaInfo {
     /**
-    * @type {string}
+    * @type {str}
     * The name of the arena.
     */
     name;
 
     /**
-    * @type {number}
+    * @type {float}
     * Currently equals to 1 for basic arena and 2 for advanced.
     */
     level;
 
     /**
-    * @type {string}
+    * @type {str}
     * Currently equals to "alpha".
     */
     season;
 
     /**
-    * @type {number}
+    * @type {float}
     * Game ticks limit.
     */
     ticksLimit;
 
     /**
-    * @type {number}
+    * @type {float}
     * CPU wall time execution limit per one tick(except the first tick).
     */
     cpuTimeLimit;
 
     /**
-    * @type {number}
+    * @type {float}
     * CPU wall time limit on the first tick.
     */
     cpuTimeLimitFirstTick;

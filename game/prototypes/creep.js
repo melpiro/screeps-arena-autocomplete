@@ -18,31 +18,31 @@ import {GameObject} from './game-object';
  */
 export class Creep extends GameObject{
     /**
-    * @type {array}
+    * @type {Array<{type:str, hits:int}>}
     * An array describing the creep’s body. Each element contains the following properties: type: string(One of the body part types constants.)hits: number(The remaining amount of hit points of this body part.)
     */
     body;
 
     /**
-    * @type {number}
+    * @type {float}
     * The movement fatigue indicator. If it is greater than zero, the creep cannot move.
     */
     fatigue;
 
     /**
-    * @type {number}
+    * @type {float}
     * The current amount of hit points of the creep.
     */
     hits;
 
     /**
-    * @type {number}
+    * @type {float}
     * The maximum amount of hit points of the creep.
     */
     hitsMax;
 
     /**
-    * @type {boolean}
+    * @type {bool}
     * Whether it is your creep.
     */
     my;
