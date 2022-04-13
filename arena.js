@@ -4,13 +4,13 @@ import {GameObject} from './game/prototypes/game-object';
  */
 export class BodyPart {
     /**
-    * @type {str}
+    * @type {string}
     * The type of the body part, one of these constants:WORKMOVECARRYATTACKRANGED_ATTACKHEALTOUGH
     */
     type;
 
     /**
-    * @type {float}
+    * @type {number}
     * The number of ticks until this item disappears.
     */
     ticksToDecay;
@@ -21,7 +21,7 @@ export class BodyPart {
  */
 export class Flag {
     /**
-    * @type {bool}
+    * @type {boolean}
     * Equals to true or false if the flag is owned. Returns undefined if it is neutral.
     */
     my;
@@ -30,7 +30,7 @@ export class Flag {
 
 export class AreaEffect extends GameObject{
     /**
-    * @type {str}
+    * @type {string}
     * One of the following constants: EFFECT_FREEZE, EFFECT_DAMAGE.
     */
     effect;
@@ -74,25 +74,25 @@ export const RESOURCE_SCORE_Z = 'score_z';
 
 export class ScoreCollector extends GameObject{
     /**
-    * @type {bool}
+    * @type {boolean}
     * Whether you have control over this collector.
     */
     my;
 
     /**
-    * @type {str}
+    * @type {string}
     * The type of the resource this collector accepts.
     */
     resourceType;
 
     /**
-    * @type {float}
+    * @type {number}
     * Current collected score number of the owner player.
     */
     score;
 
     /**
-    * @type {float}
+    * @type {number}
     * Total number of score needed to win instantly.
     */
     scoreTotal;

@@ -12,6 +12,7 @@ export class CostMatrix {
     * @param {float} x The X position in the game
     * @param {float} y The Y position in the game
     * @param {float} cost Cost of this position. Must be a whole number. A cost of 0 will use the terrain cost for that tile. A cost greater than or equal to 255 will be treated as unwalkable.
+    * @returns {void}
     */
     set(x,y,cost);
 
@@ -19,6 +20,7 @@ export class CostMatrix {
     * Get the cost of a position in this CostMatrix.
     * @param {float} x The X position in the game
     * @param {float} y The Y position in the game
+    * @returns {int}
     */
     get(x,y);
 

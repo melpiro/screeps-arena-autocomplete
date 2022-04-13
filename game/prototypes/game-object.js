@@ -1,22 +1,23 @@
+import {Structure} from './structure';
 import {GameObject} from './game-object';
 /**
  * Basic prototype for game objects. All objects and classes are inherited from this class.
  */
 export class ConstructionSite extends GameObject{
     /**
-    * @type {bool}
+    * @type {boolean}
     * Whether it is your construction site.
     */
     my;
 
     /**
-    * @type {float}
+    * @type {number}
     * The current construction progress.
     */
     progress;
 
     /**
-    * @type {float}
+    * @type {number}
     * The total construction progress needed for the structure to be built.
     */
     progressTotal;
@@ -29,6 +30,7 @@ export class ConstructionSite extends GameObject{
 
     /**
     * Remove this construction site.
+    * @returns {void}
     */
     remove();
 
@@ -38,31 +40,31 @@ export class ConstructionSite extends GameObject{
  */
 export class GameObject {
     /**
-    * @type {bool}
+    * @type {boolean}
     * Returns true if this object is live in the game at the moment. Check this property to verify cached or newly created object instances.
     */
     exists;
 
     /**
-    * @type {str}
+    * @type {string}
     * The unique ID of this object that you can use in game/utilsgetObjectById.
     */
     id;
 
     /**
-    * @type {float}
+    * @type {number}
     * If defined, then this object will disappear after this number of ticks.
     */
     ticksToDecay;
 
     /**
-    * @type {float}
+    * @type {number}
     * The X coordinate in the room.
     */
     x;
 
     /**
-    * @type {float}
+    * @type {number}
     * The Y coordinate in the room.
     */
     y;
@@ -71,12 +73,14 @@ export class GameObject {
     * See game/utilsfindClosestByPath.
     * @param {} positions 
     * @param {} opts 
+    * @returns {GameObject}
     */
     findClosestByPath(positions,opts);
 
     /**
     * See game/utilsfindClosestByRange.
     * @param {} positions 
+    * @returns {GameObject}
     */
     findClosestByRange(positions);
 
@@ -84,6 +88,7 @@ export class GameObject {
     * See game/utilsfindInRange.
     * @param {} positions 
     * @param {} range 
+    * @returns {Array<GameObject>}
     */
     findInRange(positions,range);
 
@@ -97,6 +102,7 @@ export class GameObject {
     /**
     * See game/utilsgetRange.
     * @param {object} pos An object containing xand y.
+    * @returns {int}
     */
     getRangeTo(pos);
 

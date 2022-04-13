@@ -4,13 +4,13 @@ import {GameObject} from './game-object';
  */
 export class Structure extends GameObject{
     /**
-    * @type {float}
+    * @type {number}
     * The current amount of hit points of the structure.
     */
     hits;
 
     /**
-    * @type {float}
+    * @type {number}
     * The maximum amount of hit points of the structure.
     */
     hitsMax;
