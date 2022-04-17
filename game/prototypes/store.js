@@ -6,18 +6,21 @@ export class Store {
     /**
     * Returns capacity of this store for the specified resource. For a general-purpose store, it returns total capacity if resourceis undefined.
     * @param {RESOURCE_ENERGY} resource(optional) 
+    * @returns {int}
     */
     getCapacity( [resource]);
 
     /**
     * Returns free capacity for the store. For a limited store, it returns the capacity available for the specified resource if resource is defined and valid for this store.
     * @param {RESOURCE_ENERGY} resource(optional) 
+    * @returns {int}
     */
     getFreeCapacity( [resource]);
 
     /**
     * Returns the capacity used by the specified resource. For a general-purpose store, it returns total used capacity if resource is undefined.
     * @param {RESOURCE_ENERGY} resource(optional) 
+    * @returns {int}
     */
     getUsedCapacity( [resource]);
 
