@@ -287,7 +287,7 @@ export const TOWER_COOLDOWN = 10;
 /**
 * @constant
 */
-export const BODYPART_COST = {WORK:100,MOVE:50,CARRY:50,ATTACK:80,RANGED_ATTACK:150,HEAL:250,TOUGH:10};
+export const BODYPART_COST = {work:100,move:50,carry:50,attack:80,ranged_attack:150,heal:250,tough:10};
 
 /**
 * @constant
