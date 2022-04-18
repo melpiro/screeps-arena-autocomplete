@@ -30,7 +30,7 @@ export function loop() {
 
 Then generate final code with
 ```
-python3.8 launch.py ./main.mjs ~/ScreepArena/.../main.mjs
+python launch.py ./main.mjs ~/ScreepArena/.../main.mjs
 ```
 ### Tips to improve your code
 * Always use prototypes anotations to get the right type for each of your variable (see below). By doing this, you will get a better auto-complete.
