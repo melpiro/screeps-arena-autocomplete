@@ -44,3 +44,6 @@ python3.8 launch.py ./main.mjs ~/ScreepArena/.../main.mjs
 ```javascript
 import { prototypes, utils, constants } from './JS/game';
 ```
+
+#### Info : how the code is generated
+To generate the code of the library, i used a python script that read the Screep Arena documentation and generate JS prototypes of each objects found in it.
