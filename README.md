@@ -1,17 +1,15 @@
-# screeps-arena-autocomplete
-
 A project that implement function, class, constants prototypes of the whole JS Screep arena API
 
-## how to use it
+## How to use it
 
 Create a new folder, put the JS folder in it, add a main.mjs file and start coding in it !
-### the main problem
+### The main problem
 
 Now there is a problem, the JS Screep API includes must be located at the root ("/") of the computer.
 But here the JS files are located in "./JS/...".
-So to solve the problem, i made a small python scrpit (launch.py) that copy the main.mjs file to the folder of your choise, and remplace every "./JS/" by "/" in in.
+So to solve the problem, i made a small python script (launch.py) that copy the main.mjs file to the folder of your choise, and remplace every "./JS/" by "/" in in. Allowing you to include the lib with the "./JS/" folder
 
-### example of main.mjs
+### Example of main.mjs
 
 ```javascript
 import { prototypes, utils, constants } from './JS/game';
